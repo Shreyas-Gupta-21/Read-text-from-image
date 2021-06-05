@@ -22,3 +22,12 @@ Med = { 'Crocin' : ['Algina', 'Cipmol','Dolo','Paracip', 'Febrex'] ,
 'Ciprobid' : ['Ciprokind', 'Alciflox','Ceepro', 'Ciplox'],
 'Catef O' : ['Cefaxime O', 'Neeflox O','Surgicef O', 'Pelflix O'],
 }
+
+print(Med['Remdesivir'])
+
+# find alt medicine for medicind given in txt
+l= len(txt)
+for i in range(l):
+    for key in Med.keys():
+        if key == txt[i]:
+            print(key)
