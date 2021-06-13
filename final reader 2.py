@@ -128,8 +128,7 @@ def get_image(file_name):
         main = result["main"].lower()
 
 
-
-
+        
         # Get false true image from firebase
         url = storage.child(f'medicine/{main}.jpg').get_url(token=user['idToken'])
         urllib.request.urlretrieve(url=url, filename=f"C:\\Users\\AAVAIG\\Documents\\webd\\hack-the-crisis\\api\\true.jpg")
